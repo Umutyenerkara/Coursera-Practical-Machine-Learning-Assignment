@@ -280,7 +280,9 @@ when number of variables change as well.
     plot(rfmod)
 
 ![](assignment_files/figure-markdown_strict/random%20forests%20plot-1.png)
-\#\# Prediction on Testing Dataset
+
+Prediction on Testing Dataset
+-----------------------------
 
 Now that we trained our model, we can test it on our testing set and see
 how accurate it is with a confusion matrix.
@@ -297,30 +299,30 @@ how accurate it is with a confusion matrix.
     ##          B    9 1506    2    1    0
     ##          C    0   11 1347   10    0
     ##          D    0    0    9 1275    2
-    ##          E    0    1    4    6 1431
+    ##          E    0    1    4    5 1432
     ## 
     ## Overall Statistics
     ##                                                
-    ##                Accuracy : 0.9929               
-    ##                  95% CI : (0.9907, 0.9946)     
+    ##                Accuracy : 0.993                
+    ##                  95% CI : (0.9909, 0.9947)     
     ##     No Information Rate : 0.2855               
     ##     P-Value [Acc > NIR] : < 0.00000000000000022
     ##                                                
-    ##                   Kappa : 0.991                
+    ##                   Kappa : 0.9911               
     ##                                                
     ##  Mcnemar's Test P-Value : NA                   
     ## 
     ## Statistics by Class:
     ## 
     ##                      Class: A Class: B Class: C Class: D Class: E
-    ## Sensitivity            0.9960   0.9921   0.9883   0.9868   0.9986
-    ## Specificity            0.9998   0.9981   0.9968   0.9983   0.9983
-    ## Pos Pred Value         0.9996   0.9921   0.9846   0.9914   0.9924
-    ## Neg Pred Value         0.9984   0.9981   0.9975   0.9974   0.9997
-    ## Prevalence             0.2855   0.1935   0.1737   0.1647   0.1826
-    ## Detection Rate         0.2843   0.1919   0.1717   0.1625   0.1824
+    ## Sensitivity            0.9960   0.9921   0.9883   0.9876   0.9986
+    ## Specificity            0.9998   0.9981   0.9968   0.9983   0.9984
+    ## Pos Pred Value         0.9996   0.9921   0.9846   0.9914   0.9931
+    ## Neg Pred Value         0.9984   0.9981   0.9975   0.9976   0.9997
+    ## Prevalence             0.2855   0.1935   0.1737   0.1645   0.1828
+    ## Detection Rate         0.2843   0.1919   0.1717   0.1625   0.1825
     ## Detection Prevalence   0.2845   0.1935   0.1744   0.1639   0.1838
-    ## Balanced Accuracy      0.9979   0.9951   0.9925   0.9926   0.9984
+    ## Balanced Accuracy      0.9979   0.9951   0.9925   0.9930   0.9985
 
 As we can see, our random forests model is very accurate(99.3%) with
 only 0.7% out-of-sample error or generalization error.
